@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCR</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>TCR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section id="home">
+            <h2>Rent Your Dream Car Today!</h2>
+            <p>Best rates. Top cars. Global reach.</p>
+        </section>
+
+        
+        <section id="cars">
+            <h2>Available Cars</h2>
+            <div class="cars-grid">
+
+                <div class="car-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.5oo-MjFYSgpyI1HX2-jifAHaD9?w=317&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Tesla Model Y">
+                    <div class="car-info">
+                        <h3>Tesla Model Y</h3>
+                        <p>Type: Electric</p>
+                        <p>Price: $70/day</p>
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.9cXGmRPInsgcaHmsvxgD1gAAAA?w=296&h=165&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="BMW 4">
+                    <div class="car-info">
+                        <h3>BMW 4</h3>
+                        <p>Type: Sport</p>
+                        <p>Price: $50/day</p>
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://th.bing.com/th/id/OIP.MmNyPSW3eVKZNeh8U3emvwHaEK?w=330&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Audi A6 Avant">
+                    <div class="car-info">
+                        <h3>Audi A6 Avant</h3>
+                        <p>Type: Luxury</p>
+                        <p>Price: $120/day</p>
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.tIK1P8S5zWW6ecog_qyi0wHaEH?w=306&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Rolls-Royce">
+                    <div class="car-info">
+                        <h3>Rolls-Royce</h3>
+                        <p>Type: Luxury</p>
+                        <p>Price: $150/day</p>
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Book a Car</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+
+               <label for="country-from">Country of Origin:</label>
+               <select id="country-from" name="country-from">
+               <option value="">Select your country</option>
+               <option value="Saudi Arabia">Saudi Arabia</option>
+               <option value="UAE">United Arab Emirates</option>
+               <option value="Kuwait">Kuwait</option>
+               <option value="Qatar">Qatar</option>
+               <option value="Oman">Oman</option>
+               <option value="Bahrain">Bahrain</option>
+               <option value="Jordan">Jordan</option>
+               <option value="Egypt">Egypt</option>
+               <option value="USA">USA</option>
+               <option value="UK">UK</option>
+               <option value="Others">Others</option>
+        </select>
+
+               <label for="country-in">Current Country:</label>
+               <select id="country-in" name="country-in">
+               <option value="Turkey">Turkey 🇹🇷</option>
+       </select>
+
+                <label for="car">Choose a Car:</label>
+                <select id="car" name="car">
+                    <option value="tesla">Tesla Model Y - $70/day</option>
+                    <option value="bmw">BMW 4 - $50/day</option>
+                    <option value="audi">Audi A6 Avant - $120/day</option>
+                    <option value="rolls">Rolls-Royce - $150/day</option>
+                </select>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Established in 2018 as a local startup, we have evolved into a global leader in the car rental industry.
+            By leveraging strategic partnerships with top-tier international providers, we ensure our clients receive
+            the most competitive market rates within their respective countries.
+            We bridge the gap between global availability and local value.</p>
+        </section>
+
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
