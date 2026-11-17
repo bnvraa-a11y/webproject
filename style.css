@@ -79,6 +79,14 @@ main {
     color: #aaccee;
 }
 
+.car-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .cars-grid {
     display: flex;
     flex-wrap: wrap;

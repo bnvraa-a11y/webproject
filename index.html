@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCR</title>
+    <title>TCR - Car Rental</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
     <header>
         <div class="logo">
             <h1>TCR</h1>
         </div>
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -25,96 +26,122 @@
 
     <main>
 
-        
+        <!-- Home Section -->
         <section id="home">
             <h2>Rent Your Dream Car Today!</h2>
             <p>Best rates. Top cars. Global reach.</p>
         </section>
 
-        
+        <!-- Available Cars Section -->
         <section id="cars">
             <h2>Available Cars</h2>
+
             <div class="cars-grid">
 
+                <!-- Tesla -->
                 <div class="car-card">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.5oo-MjFYSgpyI1HX2-jifAHaD9?w=317&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Tesla Model Y">
+                    <img src="./os.webp" alt="Tesla Model Y" loading="lazy">
+
                     <div class="car-info">
                         <h3>Tesla Model Y</h3>
                         <p>Type: Electric</p>
                         <p>Price: $70/day</p>
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                            Rent Now
+                        </button>
                     </div>
                 </div>
 
+                <!-- BMW -->
                 <div class="car-card">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.9cXGmRPInsgcaHmsvxgD1gAAAA?w=296&h=165&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="BMW 4">
+                    <img src="./OIP%20(1)%20copy.webp" alt="BMW 4" loading="lazy">
+
                     <div class="car-info">
                         <h3>BMW 4</h3>
                         <p>Type: Sport</p>
                         <p>Price: $50/day</p>
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                            Rent Now
+                        </button>
                     </div>
                 </div>
 
+                <!-- Audi -->
                 <div class="car-card">
-                    <img src="https://th.bing.com/th/id/OIP.MmNyPSW3eVKZNeh8U3emvwHaEK?w=330&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Audi A6 Avant">
+                    <img src="./audi6.webp" alt="Audi A6 Avant" loading="lazy">
+
                     <div class="car-info">
                         <h3>Audi A6 Avant</h3>
                         <p>Type: Luxury</p>
                         <p>Price: $120/day</p>
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                            Rent Now
+                        </button>
                     </div>
                 </div>
 
+                <!-- Rolls Royce -->
                 <div class="car-card">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP.tIK1P8S5zWW6ecog_qyi0wHaEH?w=306&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Rolls-Royce">
+                    <img src="./rolls.webp" alt="Rolls-Royce" loading="lazy">
+
                     <div class="car-info">
                         <h3>Rolls-Royce</h3>
                         <p>Type: Luxury</p>
                         <p>Price: $150/day</p>
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rent Now</button>
+
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                            Rent Now
+                        </button>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        
+        <!-- Booking Section -->
         <section id="contact">
             <h2>Book a Car</h2>
-            <form>
+
+            <form id="bookingForm">
+
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input type="text" id="name" name="name"
+                       placeholder="Your Name" required>
 
                 <label for="phone">Mobile Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+                <input type="tel" id="phone" name="phone"
+                       placeholder="+1234567890" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com">
+                <input type="email" id="email" name="email"
+                       placeholder="your@email.com" required>
 
-               <label for="country-from">Country of Origin:</label>
-               <select id="country-from" name="country-from">
-               <option value="">Select your country</option>
-               <option value="Saudi Arabia">Saudi Arabia</option>
-               <option value="UAE">United Arab Emirates</option>
-               <option value="Kuwait">Kuwait</option>
-               <option value="Qatar">Qatar</option>
-               <option value="Oman">Oman</option>
-               <option value="Bahrain">Bahrain</option>
-               <option value="Jordan">Jordan</option>
-               <option value="Egypt">Egypt</option>
-               <option value="USA">USA</option>
-               <option value="UK">UK</option>
-               <option value="Others">Others</option>
-        </select>
+                <label for="country-from">Country of Origin:</label>
+                <select id="country-from" name="country-from" required>
+                    <option value="">Select your country</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="UAE">United Arab Emirates</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Others">Others</option>
+                </select>
 
-               <label for="country-in">Current Country:</label>
-               <select id="country-in" name="country-in">
-               <option value="Turkey">Turkey 🇹🇷</option>
-       </select>
+                <label for="country-in">Current Country:</label>
+                <select id="country-in" name="country-in">
+                    <option value="Turkey">Turkey 🇹🇷</option>
+                </select>
 
                 <label for="car">Choose a Car:</label>
-                <select id="car" name="car">
+                <select id="car" name="car" required>
                     <option value="tesla">Tesla Model Y - $70/day</option>
                     <option value="bmw">BMW 4 - $50/day</option>
                     <option value="audi">Audi A6 Avant - $120/day</option>
@@ -122,19 +149,31 @@
                 </select>
 
                 <button type="submit">Submit Booking</button>
+
             </form>
         </section>
 
-        
+        <!-- About Section -->
         <section id="about">
             <h2>About Us</h2>
-            <p>Established in 2018 as a local startup, we have evolved into a global leader in the car rental industry.
-            By leveraging strategic partnerships with top-tier international providers, we ensure our clients receive
-            the most competitive market rates within their respective countries.
-            We bridge the gap between global availability and local value.</p>
+
+            <p>
+                Established in 2018 as a local startup, we have evolved
+                into a global leader in the car rental industry.
+
+                By leveraging strategic partnerships with top-tier
+                international providers, we ensure our clients receive
+                the most competitive market rates within their
+                respective countries.
+
+                We bridge the gap between global availability
+                and local value.
+            </p>
         </section>
 
     </main>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
